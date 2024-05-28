@@ -24,10 +24,11 @@ console.log(123 === "123"); //  false -> number, string -> 값과 타입을 함�
 console.log(Boolean("JavaScript"), Boolean(""));    //  string
 console.log(Boolean(2024), Boolean(0));             //  number
 
-
+//  Short-Curcuit 선택 기법
+//  Front-End 선택적 렌더링
 
 console.log(true && "Test");    //  Test
 console.log(false && "Test");   //  flase
 
-console.log(true || "Test");
-console.log(false || "Test");
+console.log(true || "Test");    //  true
+console.log(false || "Test");   //  Test 
