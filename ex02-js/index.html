@@ -31,6 +31,11 @@
             if (newWin !== undefind && newWin.closed)
                 newWin.close();
         }
+
+        function printInner() {
+            let message =  `현재 윈도우 창의 크기는 ${window.innerWidth}`
+                + `x${window.innerHeight}`;
+        }
     </script>
 </head>
 
@@ -42,7 +47,7 @@
         <li><a href="javascript:openWindow();">새 창 열기</a></li>
         <li><a href="javascript:closeWindow();">열린 창 닫기</a></li>
 
-        <li>지금 브라우저의 크기는?</li>
+        <li><a href="javascript:printInner();">지금 브라우저의 크기는?</a></li>
     </ul>
     <!-- <script>
         document.write(`안녕하세요, ${name}님`);
